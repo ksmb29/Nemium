@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap');
+
+body{
+    color: white;
+    font-size: 16px;
+    background: #251f24;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+}
+.hero{
+    /* height: 350px; */
+    block-size: 50px;
+    background-image: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
+}
+.header{
+    /* position: sticky;
+    inset-block-start: 0; */
+}
+.header-content{
+    /* position: relative;
+    inset-block-start: 20px; */
+    padding-inline: 25px;
+}
+header{
+    margin-block-start: 25px;
+    color: #616161;
+    /* position: absolute; */
+    /* inset-block-start: 0;
+    inset-inline-start: -208px;
+    inline-size: 188px; */
+}
+details summary{
+    font-weight: bold;
+    color: white;
+}
+header li a, header li{
+    text-decoration: none;
+    color: #a5a3a5;
+    margin-block-end: 16px;
+}
+h1, h2, h3{
+    font-weight: normal;
+}
+h1{
+    font-weight: 500;
+    /* font-size: 60px; */
+    font-size: 40px;
+    margin-block-start: 64px;
+    margin-block-end: 16px;
+}
+h1 + p{
+    font-size: 24px;
+}
+hr{
+    margin-block: 40px;
+    border-color: rgba(97, 97, 97, 0.2);
+}
+h2{
+    font-size: 2em;
+    font-weight: 500;
+    margin-block: 40px;
+}
+p{
+    color: #a5a3a5;
+}
+p span{
+    font-weight: 600;
+}
+h2 ~ img{
+    display: block;
+}
+h3{
+    font-size: 1.5em;
+    font-weight: 600;
+    display: inline-block;
+    counter-increment: titleList;
+    margin-block: 16px;
+}
+section{
+    counter-reset: titleList;
+}
+section img{
+    margin-block-start: 40px;
+    display: block;
+    max-inline-size: 100%;
+}
+section h3::before{
+    content: counter(titleList)". ";
+}
+section h3::after{
+    content: '';
+    height: 4px;
+    background: white;
+    display: block;
+}
+blockquote{
+    font-size: 1.5em;
+    margin-block-start: 80px;
+    margin-block-end: 63px;
+    padding-inline: 24px;
+    padding-block: 24px;
+    line-height: 24px;
+    
+}
+blockquote p{
+    color: white;
+}
+pre{
+    padding: 40px;
+    overflow: auto;
+}
+pre, blockquote{
+    background: #3a3539;
+    border-radius: 8px;    
+}
+code{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+.main hr{
+    display: none;
+}
+
+.main{
+
+}
+.wrapper{
+    max-inline-size: 802px;
+    margin: auto;
+}
+.content{
+    padding-inline: 16px;
+}
+
+
+.slider{
+
+}
+.slider-container{
+    display: block;
+    overflow: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    font-size: 0;
+}
+.video{
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+.slider-bullet-list{
+    text-align: center;
+}
+.slider-bullet{
+    display: inline-block;
+    inline-size: 15px;
+    block-size: 15px;
+    background: white;
+    border-radius: 50%; 
+}
+.slider-bullet:active{
+    background:white;
+}
+.slider-bullet:not(active){
+    background: #314755;
+}
+.form input{
+    inline-size: 100%;
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding-inline: 16px;
+    padding-block: 16px;
+    background: #251f24;
+    color: white;
+    font-size: 16px;
+    display: block;
+    margin-block-end: 24px;
+}
+
+.form input::-webkit-input-placeholder{
+    color: white;
+}
+
+.form input[type="submit"]{
+    background: #157efb;
+    border: none;
+}
+
+
+@media screen and (min-width: 1025px){
+    h1{
+        font-size: 60px;
+    }
+    .hero{
+        height: 350px;
+    }
+    .header{
+        position: sticky;
+        inset-block-start: 0;
+    }
+    .header-content{
+        position: relative;
+        inset-block-start: 20px;
+        padding-inline: 0;
+    }
+    header{
+        position: absolute;
+        inset-block-start: 0;
+        inset-inline-start: -208px;
+        inline-size: 188px;
+    }
+}
